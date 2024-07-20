@@ -16,6 +16,7 @@ const TransactionForm = () => {
             })
         },
         refetchQueries:["GetTransactionStatistics"]
+		//if you are handling two query  refetchQueries:[{query:GET_TRANSACTION_STATISTICS}]
     })
 	const handleSubmit = async (e) => {
 		e.preventDefault();
