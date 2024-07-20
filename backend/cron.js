@@ -4,8 +4,7 @@ import https from "https";
 const URL = "https://mern-graphql-tracker-app.onrender.com";
 
 const job = new cron.CronJob("*/14 * * * *", function () {
-	https
-		.get(URL, (res) => {
+	https.get(URL, (res) => {
 			if (res.statusCode === 200) {
 				console.log("GET request sent successfully");
 			} else {
